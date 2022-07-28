@@ -19,7 +19,7 @@ analysis on kickstarter to uncover trend
     3. Rows:  "Date Created Conversion"
     4. Value:  Count of outcomes
     
-    ![screenshot](/Users/yinglin/Desktop/test.png)
+    ![screenshot](test.png)
     
 ### Analysis of Outcomes Based on Goals:
     
