@@ -4,42 +4,43 @@ analysis on kickstarter to uncover trend
 
 ## 1. Overview of Project:  Explain the purpose of this analysis.
 
-### The purpose of this analysis is to determine what factors contribute to a successful fundraising campaign. 
+The purpose of this analysis is to determine what factors contribute to a successful fundraising campaign. 
     
     
 ## 2. Analysis and Challenges: explain how you performed your analysis using images and links to code, as well as any challenges you encountered and how you overcame them.  
 
 ### Analysis of Outcomes Based on Launch Date: 
 
-   year = YEAR(the cell for "Date Created Conversion")
+    year = YEAR(the cell for "Date Created Conversion")
     
-   PivotTable Fields set up:
+    PivotTable Fields set up:
     1. Filters:  "Category" (set to "theater" later), "Years" 
     2. Columns:  "outcomes" (sort the outcomes of "sucessful" in descending order)
     3. Rows:  "Date Created Conversion"
     4. Value:  Count of outcomes
-    See the screenshot below:
+    
+  See the screenshot below:
       
 ![screenshot](https://github.com/amyylin1/kickstarter-analysis/blob/2ec93594c0622602681a61bfe3f23841429ecddb/test.png)   
 
 ### Analysis of Outcomes Based on Goals:
     
-   COUNTIFS syntax:
-   COUNTIFS(criteria_range 1, criteria, [criteria_range2, criteria2]...)
+    COUNTIFS syntax:
+    COUNTIFS(criteria_range 1, criteria, [criteria_range2, criteria2]...)
     e.g., =COUNTIFS(kickstarter!$F:$F,"successful",kickstarter!$D:$D,"<1000", kickstarter!$R:$R, "plays")
    Note: make sure to change the criteria of "kicstarter!$F:$F" and the goal accordingly for each cell
     
-   SUM syntax: SUM(A2:A10)
-    e.g., = SUM(B2:D2)
+    SUM syntax: SUM(A2:A10)
+     e.g., = SUM(B2:D2)
     
-   % successful, failed, and canceled project:
-   formula = Number Successful (Failed or Canceled) / Total Project 
+    Percentage successful, failed, and canceled project:
+    formula = Number Successful (Failed or Canceled) / Total Project 
    
     
 ### Challenges and Difficulties Encountered:
 
    1.  Get familiar with the relevant function of excels
-   2.  Understand rows vs. columns variables in the pivot table.  How will the table look like if rows and columns are switched?
+   2.  Understand rows and columns variables in the pivot table.  How will the table look like if rows and columns are   switched? It helps to manipulate the data and see whether the outcome addresses your question. 
 
 
 ## 3. Results:  Answer the following questions in complete and coherent sentences.
@@ -54,11 +55,12 @@ analysis on kickstarter to uncover trend
     
       
 - What are some limitations of this dataset?
-    Goal alone can't predict how successful the campaign is.  Besdies the types of catogories and difference in timing, other factors must be in play.   
-    For example,  what other factors for the goal of 45000 to 49999 contribute to the 100 % failed rate?  Most of failed campaigns are underfunded.  The data does not indicate why they are underfunded.  
+    
+    Goal alone can't predict how successful a campaign is.  Besdies the differences in catogories and timing, other factors (not included in the data) are also in play.   For example,  what other factors for the goal of 45000 to 49999 contribute to the 100 % failure rate?  Most of the failed campaigns are underfunded.  The data does not indicate why they are underfunded.  
     
      
 - What are some of other possible tables and/or graphs that we could create? 
+
     It would be nice to have table to measure the interest from the public and donors for the successful campaigns.  What makes these successful campaigns well funded?
 
     
