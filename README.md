@@ -18,9 +18,10 @@ analysis on kickstarter to uncover trend
     2. Columns:  "outcomes" (sort the outcomes of "sucessful" in descending order)
     3. Rows:  "Date Created Conversion"
     4. Value:  Count of outcomes
-    
-    ![screenshot](https://github.com/amyylin1/kickstarter-analysis/blob/2ec93594c0622602681a61bfe3f23841429ecddb/test.png)
-    
+    See the screenshot below:
+      
+![screenshot](https://github.com/amyylin1/kickstarter-analysis/blob/2ec93594c0622602681a61bfe3f23841429ecddb/test.png)   
+
 ### Analysis of Outcomes Based on Goals:
     
     COUNTIFS syntax:
@@ -58,6 +59,6 @@ analysis on kickstarter to uncover trend
     
      
 - What are some of other possible tables and/or graphs that we could create? 
-    It would be nice to have table to measure the interest from the public and donors for the successful campaigns.  What makes these successful campaigns well funded.  
+    It would be nice to have table to measure the interest from the public and donors for the successful campaigns.  What makes these successful campaigns well funded?
 
     
