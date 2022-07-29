@@ -11,9 +11,9 @@ analysis on kickstarter to uncover trend
 
 ### Analysis of Outcomes Based on Launch Date: 
 
-    year = YEAR(the cell for "Date Created Conversion")
+   year = YEAR(the cell for "Date Created Conversion")
     
-    PivotTable Fields set up:
+   PivotTable Fields set up:
     1. Filters:  "Category" (set to "theater" later), "Years" 
     2. Columns:  "outcomes" (sort the outcomes of "sucessful" in descending order)
     3. Rows:  "Date Created Conversion"
@@ -24,22 +24,22 @@ analysis on kickstarter to uncover trend
 
 ### Analysis of Outcomes Based on Goals:
     
-    COUNTIFS syntax:
-    COUNTIFS(criteria_range 1, criteria, [criteria_range2, criteria2]...)
+   COUNTIFS syntax:
+   COUNTIFS(criteria_range 1, criteria, [criteria_range2, criteria2]...)
     e.g., =COUNTIFS(kickstarter!$F:$F,"successful",kickstarter!$D:$D,"<1000", kickstarter!$R:$R, "plays")
-    Note: make sure to change the criteria of "kicstarter!$F:$F" and the goal accordingly for each cell
+   Note: make sure to change the criteria of "kicstarter!$F:$F" and the goal accordingly for each cell
     
-    SUM syntax: SUM(A2:A10)
+   SUM syntax: SUM(A2:A10)
     e.g., = SUM(B2:D2)
     
-    % successful, failed, and canceled project:
-    formula = Number Successful (Failed or Canceled) / Total Project 
+   % successful, failed, and canceled project:
+   formula = Number Successful (Failed or Canceled) / Total Project 
    
     
 ### Challenges and Difficulties Encountered:
 
-    1.  Get familiar with the relevant function of excels
-    2.  Understand rows vs. columns variables in the pivot table.  How will the table look like if rows and columns are switched?
+   1.  Get familiar with the relevant function of excels
+   2.  Understand rows vs. columns variables in the pivot table.  How will the table look like if rows and columns are switched?
 
 
 ## 3. Results:  Answer the following questions in complete and coherent sentences.
